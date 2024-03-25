@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Hannah</h1>
-<h3 align="center">A passionate frontend developer from the Netherlands</h3>
+<h3 align="center">A passionate front-end developer from the Netherlands</h3>
 
 - 🔭 I’m currently working on [a Portfolio](https://hannah813105.github.io/hannah-menninga/)
 

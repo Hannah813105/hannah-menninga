@@ -23,9 +23,13 @@ h5, a, p {
     position: fixed;
     margin-top: 25px;
     margin-left: 25px;
+    padding-right: 10px;
     min-height: 50px;
     width: 90%;
     
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+
     border-radius: 30px;
     background-color: white;
     box-shadow: 7px 7px 7px rgba(215, 193, 224, 0.621);
@@ -39,8 +43,6 @@ h5, a, p {
 
 /* navigatie knoppen */
 .navb {
-    float: right;
-    margin-right: 5%;
     margin-top: 10px;
     margin-bottom: 10px;
     height: 20px;
@@ -54,6 +56,18 @@ h5, a, p {
     border-width: 5px 10px 0px 10px;
     border-style: solid;
     border-color: white;
+}
+
+#home {
+    grid-column-start: 3;
+}
+
+#werk {
+    grid-column-start: 4;
+}
+
+#contact {
+    grid-column-start: 5;
 }
 
 .active, .navb:hover{

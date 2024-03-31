@@ -8,7 +8,7 @@
 }
 
 /* text */
-h1, p {
+.pagina {
     text-align: center;
 }
 
@@ -21,19 +21,25 @@ a, p {
 .menu {
     position: fixed;
     margin-top: 25px;
-    margin-left: 20px;
-    width: 90%;
+    margin-left: 25px;
     min-height: 50px;
+    width: 90%;
     
     border-radius: 30px;
     background-color: white;
     box-shadow: 7px 7px 7px rgba(215, 193, 224, 0.621);
 }
 
+.logo {
+    position: absolute;
+    margin-top: 16px;
+    margin-left: 20px;
+}
+
 /* navigatie knoppen */
 .navb {
-    float: left;
-    margin-left: 5%;
+    float: right;
+    margin-right: 5%;
     margin-top: 10px;
     margin-bottom: 10px;
     height: 20px;
@@ -50,12 +56,18 @@ a, p {
 }
 
 .active, .navb:hover{
-    background-color: lightblue;
-    border-color: lightblue;
+    color: white;
+    background-color: black;
+    border-color: black;
 } 
 
 /* pagina inhoud */
 .pagina {
-    padding-left: 50px;
-    padding-top: 100px;
+    padding-top: 250px;
 }
+
+.inhoud {
+    padding-top: 100px;
+    padding-left: 25px;
+}
+

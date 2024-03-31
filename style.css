@@ -1,8 +1,11 @@
-body {
+* {
     margin: auto;
-    height: 1000px;
-    background-color: rgb(161, 213, 228);
     scrollbar-color: white;
+}
+
+.container {
+    min-height: 1050px;
+    background: conic-gradient(from -3.66deg at 50% 0%, #B8F6FF 0deg, rgba(196, 232, 246, 0.748059) 90.7deg, rgba(200, 227, 243, 0.659374) 122.63deg, rgba(226, 209, 232, 0.342452) 236.72deg, rgba(232, 189, 220, 0) 360deg);
 }
 
 /* text */
@@ -21,11 +24,7 @@ a, p {
     
     border-radius: 30px;
     background-color: white;
-    box-shadow: 7px 7px 7px lightpink;
-}
-
-.fill {
-    height: 100px;
+    box-shadow: 7px 7px 7px rgba(215, 193, 224, 0.621);
 }
 
 /* navigatie knoppen */
@@ -54,8 +53,6 @@ a, p {
 
 /* pagina inhoud */
 .pagina {
-    margin-left: 10%;
-    margin-top: 15px;
+    padding-left: 50px;
+    padding-top: 100px;
 }
-
-/* animaties */

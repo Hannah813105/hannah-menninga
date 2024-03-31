@@ -21,14 +21,15 @@ h5, a, p {
 /* menubalk voor navigatie */
 .menu {
     position: fixed;
+    display: block;
     margin-top: 25px;
-    margin-left: 25px;
-    padding-right: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
     min-height: 50px;
     width: 90%;
     
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    grid-template-columns: 3fr 3fr 1fr 1fr 1fr;
 
     border-radius: 30px;
     background-color: white;
@@ -47,6 +48,7 @@ h5, a, p {
     margin-bottom: 10px;
     height: 20px;
     width: auto;
+    text-align: center;
 
     color: black;
     background-color: white;
@@ -70,11 +72,17 @@ h5, a, p {
     grid-column-start: 5;
 }
 
-.active, .navb:hover{
+.active{
     color: white;
     background-color: black;
     border-color: black;
 } 
+
+.navb:hover {
+    color: white;
+    background-color: darkgray;
+    border-color: darkgray;
+}
 
 /* pagina inhoud */
 .pagina {

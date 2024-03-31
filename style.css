@@ -8,6 +8,10 @@
 }
 
 /* text */
+h1, p {
+    text-align: center;
+}
+
 a, p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -54,5 +58,4 @@ a, p {
 .pagina {
     padding-left: 50px;
     padding-top: 100px;
-    text-align: center;
 }

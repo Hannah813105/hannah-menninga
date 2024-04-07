@@ -121,7 +121,7 @@ h5, a, p {
 }
 
 .card {
-    box-shadow: 7px 7px 7px 7px rgb(215, 193, 224);
+    box-shadow:  7px 7px 7px rgb(215, 193, 224);
     margin-bottom: 10px;
     min-height: 200px;
     min-width: 340px;

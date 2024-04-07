@@ -123,19 +123,6 @@ a, p {
     grid-gap: 25px;
 }
 
-#deltarune {
-    grid-column-start: 2;
-}
-
-#scrollytelling {
-    margin-top: 50px;
-    grid-column-start: 2;
-}
-
-#groningen_spot {
-    margin-top: 50px;
-}
-
 .card {
     box-shadow: 7px 7px rgb(168, 143, 178);
     min-height: 200px;
@@ -151,6 +138,20 @@ a, p {
     border-radius: 22px; 
     border-width: 10px;
     border-style: solid;
+}
+
+#deltarune {
+    grid-column-start: 2;
+}
+
+#scrollytelling {
+    margin-top: 5px;
+    grid-column-start: 2;
+}
+
+#groningen_spot {
+    margin-top: 5px;
+
 }
 
 .card:hover {

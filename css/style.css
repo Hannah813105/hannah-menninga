@@ -3,7 +3,7 @@
 }
 
 .container {
-    min-height: 1050px;
+    min-height: 810px;
     background-image: conic-gradient(from -3.66deg at 50% 0%, #B8F6FF 0deg, rgba(196, 232, 246, 0.748059) 90.7deg, rgba(200, 227, 243, 0.659374) 122.63deg, rgba(226, 209, 232, 0.342452) 236.72deg, rgba(232, 189, 220, 0) 360deg);
 }
 

@@ -154,7 +154,8 @@ a, p {
 }
 
 .jaar {
-    color: gray;
+    color: rgb(166, 166, 166);
+    opacity: 100%;
 }
 
 .plaatjes {

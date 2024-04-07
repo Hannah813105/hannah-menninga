@@ -153,6 +153,10 @@ a, p {
     margin-top: 5px;
 }
 
+.jaar {
+    color: gray;
+}
+
 .plaatjes {
     grid-column-start: 2;
 }

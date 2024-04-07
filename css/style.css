@@ -151,7 +151,14 @@ a, p {
 
 #groningen_spot {
     margin-top: 5px;
+}
 
+.plaatjes {
+    grid-column-start: 2;
+}
+
+.text {
+    grid-column-start: 3;
 }
 
 .card:hover {

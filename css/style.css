@@ -117,13 +117,17 @@ h5 {
     grid-gap: 25px;
 }
 
-#muur {
+#deltarune {
     grid-column-start: 2;
 }
 
-#deltarune {
-    margin-top: 60px;
+#scrollytelling {
+    margin-top: 50px;
     grid-column-start: 2;
+}
+
+#groningen_spot {
+    margin-top: 50px;
 }
 
 .card {

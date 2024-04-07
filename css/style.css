@@ -131,7 +131,7 @@ a, p {
 
     padding-top: 20px;
     color: black;
-    background-color: white;;
+    background-color: white;
     text-decoration: none;
 
     border-color: white;
@@ -155,20 +155,20 @@ a, p {
 
 .announcement {
     grid-column-start: 2;
-    background-color: black;
-    color: white;
-    padding-bottom: 20px;
 
     min-height: 200px;
     min-width: 340px;
     text-align: center;
 
     padding-top: 20px;
+    color: white;
+    background-color: rgb(128, 98, 211);
     text-decoration: none;
 
+    border-color: rgb(128, 98, 211);
     border-radius: 22px; 
     border-width: 10px;
-    border-style: solid black;
+    border-style: solid;
 }
 
 .jaar {

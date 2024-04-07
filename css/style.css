@@ -185,6 +185,19 @@ a, p {
     opacity: 100%;
 }
 
+
+.p1 {
+    grid-row-start: 1;
+}
+
+.p2 {
+    grid-row-start: 2;
+}
+
+.p3 {
+    grid-row-start: 3;
+}
+
 .plaatjes {
     grid-column-start: 2;
 }

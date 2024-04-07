@@ -182,7 +182,7 @@ a, p {
     font-size: 24px;
 
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -194,6 +194,7 @@ a, p {
 #link1{
     grid-row-start: 1;
     box-shadow: 7px 7px rgb(168, 143, 178);
+
 }
 
 #li {
@@ -204,5 +205,14 @@ a, p {
     grid-row-start: 3;
     box-shadow: 7px 7px rgb(168, 143, 178);
     min-width: 130px;
+}
+
+#git {
+    grid-row-start: 5;
+}
+
+#link3{
+    grid-row-start: 5;
+    box-shadow: 7px 7px rgb(168, 143, 178);
 }
 

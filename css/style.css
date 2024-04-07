@@ -109,6 +109,15 @@ a, p {
     grid-template-columns: 0.5fr 2fr 1fr 1fr;
 }
 
+.inhoud_w {
+    margin-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
 #profile_pic {
     height: 400px;
     border-radius: 800px;

@@ -116,7 +116,7 @@ a, p {
 }
 
 .werk_inhoud {
-    margin-top: 40px;
+    margin-top: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 0fr;
@@ -140,17 +140,35 @@ a, p {
     border-style: solid;
 }
 
-#deltarune {
+#muur {
+    margin-top: 5px;
     grid-column-start: 2;
 }
 
 #scrollytelling {
     margin-top: 5px;
-    grid-column-start: 2;
 }
 
 #groningen_spot {
     margin-top: 5px;
+}
+
+.announcement {
+    grid-column-start: 2;
+    background-color: black;
+    color: white;
+    padding-bottom: 20px;
+
+    min-height: 200px;
+    min-width: 340px;
+    text-align: center;
+
+    padding-top: 20px;
+    text-decoration: none;
+
+    border-radius: 22px; 
+    border-width: 10px;
+    border-style: solid black;
 }
 
 .jaar {

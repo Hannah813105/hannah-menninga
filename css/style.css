@@ -109,7 +109,7 @@ a, p {
     padding-left: 50px;
     padding-right: 50px;
     display: grid;
-    grid-template-columns: 0.5fr 2fr 1fr 1fr;
+    grid-template-columns: .5fr 2fr 1.5fr .5fr;
 }
 
 .inhoud_w {
@@ -126,6 +126,10 @@ a, p {
     height: 400px;
     border-radius: 800px;
     grid-column-start: 2;
+}
+
+#intro {
+    grid-column-start: 3;
 }
 
 .werk_inhoud {

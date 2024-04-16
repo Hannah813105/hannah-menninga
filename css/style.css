@@ -51,6 +51,8 @@ a, p {
     margin-left: 20px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: medium;
+    text-decoration: none;
+    color: black;
 }
 
 /* navigatie knoppen */
@@ -80,8 +82,8 @@ a, p {
 
 .navb:hover {
     color: white;
-    background-color: darkgray;
-    border-color: darkgray;
+    background-color: rgb(177, 158, 231);
+    border-color: rgb(177, 158, 231);
 }
 
 #home {
@@ -217,8 +219,8 @@ a, p {
 }
 
 .back:hover {
-    background-color: darkgray;
-    border-color: darkgray;
+    background-color: rgb(78, 97, 24);
+    border-color: rgb(78, 97, 24);
     filter: invert(100%);
 }
 
@@ -255,9 +257,9 @@ a, p {
 }
 
 .card:hover {
-    color: white;
-    background-color: rgba(215, 193, 224, 0.621);
-    border-color: rgba(215, 193, 224, 0.621);
+    filter: invert(100%);
+    background-color: rgb(78, 97, 24);
+    border-color: rgb(78, 97, 24);
     box-shadow: 7px 7px white;
 }
 

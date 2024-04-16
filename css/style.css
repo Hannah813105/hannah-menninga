@@ -193,7 +193,7 @@ a, p {
 }
 
 .back {
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 10px;
     padding-top: 2px;
     padding-bottom: 5px;
@@ -213,9 +213,6 @@ a, p {
 
 .arrow {
     width: 15px;
-    rotate: 270deg;
-    padding-right: 5px;
-    position: relative;
     left: -2px;
 }
 

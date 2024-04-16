@@ -114,8 +114,9 @@ a, p {
     padding-left: 50px;
     padding-right: 50px;
     display: grid;
-    grid-template-columns: 0.5fr 2fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 0.3fr 2fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr;
+    grid-gap: 20px;
 }
 
 #profile_pic {
@@ -128,7 +129,7 @@ a, p {
     margin-top: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 0fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 25px;
 }
 
@@ -185,31 +186,56 @@ a, p {
     opacity: 100%;
 }
 
-
-.p1 {
+.bb {
+    margin-top: 0;  
     grid-row-start: 1;
-    margin-top: 20px;
-    max-width: 500px;
 }
 
-.p2 {
+.back {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 20px;
+    min-width: 65px;
+    text-align: center;
+
+    color: black;
+    background-color: white;
+    text-decoration: none;
+
+    border-radius: 22px; 
+    border-width: 5px 10px 0px 10px;
+    border-style: solid;
+    border-color: white;
+}
+
+.back:hover {
+    color: white;
+    background-color: darkgray;
+    border-color: darkgray;
+}
+
+.pic {
     grid-row-start: 2;
-    margin-top: 20px;
     max-width: 500px;
 }
 
-.p3 {
-    grid-row-start: 3;
-    margin-top: 20px;
-    max-width: 500px;
-}
-
-.plaatjes {
+#p1 {
     grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+#p2 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+#p3 {
+    grid-column-start: 2;
+    grid-row-start: 4;
 }
 
 .text {
-    grid-row-start: 1;
+    grid-row-start: 2;
     grid-column-start: 3;
 }
 

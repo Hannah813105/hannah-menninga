@@ -142,11 +142,10 @@ a, p {
 
 .card {
     box-shadow: 7px 7px rgb(168, 143, 178);
-    min-height: 200px;
+    min-height: 240px;
     min-width: 340px;
     text-align: center;
 
-    padding-top: 20px;
     color: black;
     background-color: white;
     text-decoration: none;
@@ -155,6 +154,28 @@ a, p {
     border-radius: 22px; 
     border-width: 10px;
     border-style: solid;
+}
+
+.card:hover{
+    background-color: rgb(177, 158, 231);
+    border-color: rgb(177, 158, 231);
+    box-shadow: 7px 7px black;
+    color: white;
+}
+
+.cover {
+    width: 340px;
+    padding-top: 0px;
+    border-radius: 12px;
+}
+
+.card_title {
+    margin-top: 8px;
+}
+
+.jaar {
+    color: rgb(125, 125, 125);
+    opacity: 100%;
 }
 
 #muur {
@@ -186,11 +207,6 @@ a, p {
     border-radius: 22px; 
     border-width: 10px;
     border-style: solid;
-}
-
-.jaar {
-    color: rgb(166, 166, 166);
-    opacity: 100%;
 }
 
 .bb {
@@ -258,13 +274,6 @@ a, p {
 .text {
     grid-row-start: 3;
     grid-column-start: 3;
-}
-
-.card:hover {
-    filter: invert(100%);
-    background-color: rgb(78, 97, 24);
-    border-color: rgb(78, 97, 24);
-    box-shadow: 7px 7px white;
 }
 
 .contact_info {

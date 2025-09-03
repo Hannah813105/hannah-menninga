@@ -4,13 +4,20 @@
 
 .container {
     width: 100%;
-    min-height: 900px;
+    min-height: 100vh;
     background-image: conic-gradient(from -3.66deg at 50% 0%, #B8F6FF 0deg, rgba(196, 232, 246, 0.748059) 90.7deg, rgba(200, 227, 243, 0.659374) 122.63deg, rgba(226, 209, 232, 0.342452) 236.72deg, rgba(232, 189, 220, 0) 360deg);
 }
 
 .pagina {
-    padding-top: 200px;
-    height: 100px;
+    padding-top: 10%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 120px 1fr 1fr;
+}
+
+.pagina > * {
+    grid-column: 2;
 }
 
 /* text */
@@ -32,19 +39,19 @@ a, p {
     font-size: 14px;
 }
 
-
 /* menubalk voor navigatie */
 .menu {
     position: fixed;
     display: block;
-    margin-top: 25px;
+    margin-top: 32px;
     margin-left: 5%;
     margin-right: 5%;
-    min-height: 50px;
+    min-height: 64px;
     width: 90%;
     
     display: grid;
-    grid-template-columns: 3fr 3fr 1fr 1fr 1fr;
+    grid-template-columns: 3fr 6fr 1fr 1fr 1fr 0.2fr;
+    column-gap: 12px;
 
     border-radius: 30px;
     background-color: white;
@@ -53,21 +60,22 @@ a, p {
 
 .logo {
     position: absolute;
-    margin-top: 16px;
-    margin-left: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: medium;
     text-decoration: none;
+    font-size: large;
     color: black;
 }
 
 
 /* navigatie knoppen */
 .navb {
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 10px;
-    height: 20px;
-    min-width: 65px;
+    height: 25px;
+    min-width: 80px;
     width: auto;
     text-align: center;
 
@@ -76,7 +84,7 @@ a, p {
     text-decoration: none;
 
     border-radius: 22px; 
-    border-width: 5px 10px 0px 10px;
+    border-width: 8px 10px 0px 10px;
     border-style: solid;
     border-color: white;
 }
@@ -95,14 +103,6 @@ a, p {
 
 #home {
     grid-column-start: 3;
-}
-
-#werk {
-    grid-column-start: 4;
-}
-
-#contact {
-    grid-column-start: 5;
 }
 
 
@@ -130,7 +130,7 @@ a, p {
 .werk_inhoud {
     margin-top: 100px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr 1fr .5fr;
     grid-gap: 25px;
 }
@@ -315,30 +315,36 @@ a, p {
 #mail {
     min-width: 150px;
     grid-row-start: 1;
+    margin-left: 0;
 }
 
 #link1{
     grid-row-start: 1;
     box-shadow: 7px 7px rgb(168, 143, 178);
-
+    margin-left: 0;
 }
 
 #li {
     grid-row-start: 3;
+    align-items: center;
+    margin-left: 10px;
 }
 
 #link2{
     grid-row-start: 3;
     box-shadow: 7px 7px rgb(168, 143, 178);
     min-width: 130px;
+    margin-left: 0;
 }
 
 #git {
     grid-row-start: 5;
+    margin-left: 20px;
 }
 
 #link3{
     grid-row-start: 5;
     box-shadow: 7px 7px rgb(168, 143, 178);
+    margin-left: 0;
 }
 

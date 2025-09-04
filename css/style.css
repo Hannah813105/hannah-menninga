@@ -13,7 +13,7 @@
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
-    grid-template-rows: 160px 1fr 1fr;
+    grid-template-rows: 160px 1fr 0.5fr;
     row-gap: 60px;
 }
 
@@ -25,14 +25,17 @@
 /* text */
 h1 {
     text-align: center;
+    color: #6A4C93;
+    font-size: 38px;
 }
 
 h5 {
     margin-top: 8px;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
+    color: #5C5C5C;
 }
 
 a, p {
@@ -66,7 +69,7 @@ a, p {
     margin-top: 20px;
     margin-left: 30px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: medium;
+    font-weight: bold;
     text-decoration: none;
     font-size: large;
     color: black;
@@ -83,19 +86,19 @@ a, p {
     text-align: center;
 
     color: black;
-    background-color: white;
+    background-color:#FDFDFE;
     text-decoration: none;
 
     border-radius: 22px; 
     border-width: 8px 10px 0px 10px;
     border-style: solid;
-    border-color: white;
+    border-color: #FDFDFE;
 }
 
 .active{
-    color: white;
-    background-color: black;
-    border-color: black;
+    color: #FDFDFE;
+    background-color: #6A4C93;
+    border-color: #6A4C93;
 } 
 
 .navb:hover {
@@ -128,6 +131,52 @@ a, p {
     max-width: 300px;
 }
 
+/*contact pagina*/
+.contact_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 54px;
+}
+
+#envelope {
+    height: 280px;
+    border-radius: 40px;
+    opacity: 80%;
+    grid-column-start: 2;
+}
+
+.titel_contact {
+    grid-column-start: 3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 16px;
+}
+
+#c_title {
+    min-width: 150px;
+    margin-left: 0;
+}
+
+#linkc{
+    box-shadow: 4px 5px #C8A2C8;
+    margin-left: 0;
+    min-width: 120px;
+    align-items: center;
+}
+
+#link2{
+    box-shadow: 4px 5px #C8A2C8;
+    min-width: 160px;
+    margin-left: 0;
+}
+
+#link2:hover, #linkc:hover{
+    box-shadow: 4px 5px #5C5C5C;
+}
 
 /* werk pagina */
 .werk_inhoud {
@@ -138,7 +187,7 @@ a, p {
 }
 
 .card {
-    box-shadow: 7px 7px rgb(168, 143, 178);
+    box-shadow: 6px 6px #C8A2C8;
     min-height: 240px;
     min-width: 340px;
     text-align: center;
@@ -156,7 +205,7 @@ a, p {
 .card:hover{
     background-color: rgb(177, 158, 231);
     border-color: rgb(177, 158, 231);
-    box-shadow: 7px 7px black;
+    box-shadow: 7px 7px #5C5C5C;
     color: white;
 }
 
@@ -171,7 +220,7 @@ a, p {
 }
 
 .jaar {
-    color: rgb(125, 125, 125);
+    color: #5C5C5C;
     opacity: 100%;
 }
 
@@ -182,10 +231,10 @@ a, p {
 
     padding-top: 20px;
     color: white;
-    background-color: rgb(177, 158, 231);
+    background-color: #6A4C93;
     text-decoration: none;
 
-    border-color: rgb(177, 158, 231);
+    border-color: #6A4C93;
     border-radius: 22px; 
     border-width: 10px;
     border-style: solid;
@@ -270,67 +319,5 @@ a, p {
     grid-template-columns: .8fr 2fr 1fr 1fr;
     grid-template-rows: .1fr .3fr 1fr 1fr;
     grid-gap: 20px;
-}
-
-/*contact pagina*/
-.contact_info {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 54px;
-}
-
-#envelope {
-    height: 280px;
-    border-radius: 40px;
-    opacity: 80%;
-    grid-column-start: 2;
-}
-
-.titel_contact {
-    grid-column-start: 4;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    margin-top: 10px;
-    font-size: 24px;
-
-    display: grid;
-    row-gap: 16px;
-    grid-column-start: 3;
-}
-
-#mail {
-    min-width: 150px;
-    grid-row-start: 1;
-    margin-left: 0;
-}
-
-#link1{
-    grid-row-start: 1;
-    box-shadow: 7px 7px rgb(168, 143, 178);
-    margin-left: 0;
-}
-
-#li {
-    grid-row-start: 3;
-    align-items: center;
-    margin-left: 10px;
-}
-
-#link2{
-    grid-row-start: 3;
-    box-shadow: 7px 7px rgb(168, 143, 178);
-    min-width: 160px;
-    margin-left: 0;
-}
-
-#git {
-    grid-row-start: 5;
-    margin-left: 20px;
-}
-
-#link3{
-    grid-row-start: 5;
-    box-shadow: 7px 7px rgb(168, 143, 178);
-    margin-left: 0;
 }
 

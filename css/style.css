@@ -10,11 +10,14 @@
 
 .pagina {
     padding-top: 10%;
+    padding-bottom: 140px;
     min-height: 100vh;
+
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
-    grid-template-rows: 160px 1fr 0.5fr;
-    row-gap: 60px;
+    grid-template-rows: 160px auto;
+    row-gap: 50px;
+
 }
 
 .pagina > * {
@@ -111,7 +114,6 @@ a, p {
     grid-column-start: 3;
 }
 
-
 /* 'over mij' pagina inhoud */
 .inhoud {
     padding-left: 50px;
@@ -119,6 +121,11 @@ a, p {
     display: grid;
     grid-template-columns: 2fr 1.5fr;
     column-gap: 50px;
+}
+
+#opening {
+    text-align: center;
+    margin-top: 20px;
 }
 
 #profile_pic {
@@ -133,6 +140,8 @@ a, p {
 
 /*contact pagina*/
 .contact_info {
+    margin: 50px;
+    align-self: start;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 54px;
@@ -193,10 +202,10 @@ a, p {
     text-align: center;
 
     color: black;
-    background-color: white;
+    background-color: #f9f9f9;
     text-decoration: none;
 
-    border-color: white;
+    border-color: #f9f9f9;
     border-radius: 22px; 
     border-width: 10px;
     border-style: solid;

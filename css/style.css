@@ -125,14 +125,14 @@ a, p {
 
 #intro {
     min-width: 240px;
-    max-width: 360px;
+    max-width: 300px;
 }
 
 
 /* werk pagina */
 .werk_inhoud {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr .5fr;
     grid-gap: 25px;
 }
@@ -175,23 +175,8 @@ a, p {
     opacity: 100%;
 }
 
-#muur {
-    margin-top: 5px;
-    grid-column-start: 2;
-}
-
-#scrollytelling {
-    margin-top: 5px;
-}
-
-#groningen_spot {
-    margin-top: 5px;
-}
-
 .announcement {
-    grid-column-start: 2;
-
-    min-height: 200px;
+    min-height: 220px;
     min-width: 340px;
     text-align: center;
 

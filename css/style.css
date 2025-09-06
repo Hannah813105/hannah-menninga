@@ -335,22 +335,30 @@ a, p {
 }
 
 /*content aanpassingen groote window*/
-@media (max-width: 420px) {
+@media (max-width: 360px) {
+    .navb {
+        min-width: 65px;
+    }
+}
+
+@media (max-width: 440px) {
     .pagina {
         row-gap: 30px;
     }
 
-    .inhoud {
+    .inhoud, #opening {
         padding: 5px;
     }
 
     h1 {
         font-size: 46px;
+        padding: 10px;
     }
 
     h5 {
         margin-top: 8px;
         font-size: 18px;
+        padding: 10px;
     }
 
     a, p {
@@ -373,6 +381,11 @@ a, p {
 }
 
 @media (max-width: 500px) {
+    .menu {
+        position: absolute;
+        left: 2%;
+    }
+
     .pagina {
         grid-template-columns: 1fr;
     }
@@ -404,6 +417,36 @@ a, p {
     #envelope {
         height: 180px;
         border-radius: 10px;
+    }
+}
+
+@media (max-width: 666px) {
+    .pagina {
+        padding-top: 24vh;
+    }
+
+    .menu {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr;
+    }
+
+    .logo { 
+        margin-left: 10;
+    }
+
+    #home { 
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+       
+    #werk { 
+        grid-column-start: 3;
+        grid-row-start: 2;
+    }
+    
+    #contact { 
+        grid-column-start: 4;
+        grid-row-start: 2;
     }
 }
 
@@ -444,77 +487,81 @@ a, p {
 /* Force look in dark mode */
 @media (prefers-color-scheme: dark) {
 
-  body, .container, .pagina, .menu, .logo, .navb, .active, .inhoud,
-  #opening, #opening *, #profile_pic, #intro,
-  .contact_info, #envelope, .titel_contact, #c_title, #linkc, #link2,
-  .werk_inhoud, .announcement, .card, .cover, .card_title, .jaar,
-  .bb, .back, .arrow, .text_1, .pic, #p1, #p2, #p3, .text, .inhoud_w,
-  h1, h5, a, p {
-    background-color: initial;
-    color: initial;
-    border-color: initial;
-    box-shadow: initial;
-  }
+    body, .container, .pagina, .menu, .logo, .navb, .active, .inhoud,
+    #opening, #opening *, #profile_pic, #intro,
+    .contact_info, #envelope, .titel_contact, #c_title, #linkc, #link2,
+    .werk_inhoud, .announcement, .card, .cover, .card_title, .jaar,
+    .bb, .back, .arrow, .text_1, .pic, #p1, #p2, #p3, .text, .inhoud_w,
+    h1, h5, a, p {
+        background-color: initial;
+        color: initial;
+        border-color: initial;
+        box-shadow: initial;
+    }
 
-  body {
-    background-color: white;
-    color: black;
-  }
+    body {
+        background-color: white;
+        color: black;
+    }
 
-  h1 {
-    color: #6A4C93;
-  }
+    h1 {
+        color: #6A4C93;
+    }
 
-  h5 {
-    color: #2d2d2d;
-  }
+    h5 {
+        color: #2d2d2d;
+    }
 
-  .menu {
-    background-color: white;
-    box-shadow: 7px 7px 7px rgba(215, 193, 224, 0.621);
-  }
+    .container {
+        background-image: conic-gradient(from -3.66deg at 50% 0%, #B8F6FF 0deg, rgba(196, 232, 246, 0.748059) 90.7deg, rgba(200, 227, 243, 0.659374) 122.63deg, rgba(226, 209, 232, 0.342452) 236.72deg, rgba(232, 189, 220, 0) 360deg);
+    }
 
-  .navb {
-    background-color: #FDFDFE;
-    color: black;
-    border-color: #FDFDFE;
-  }
+    .menu {
+        background-color: white;
+        box-shadow: 7px 7px 7px rgba(215, 193, 224, 0.621);
+    }
 
-  .active {
-    background-color: #6A4C93;
-    color: #FDFDFE;
-    border-color: #6A4C93;
-  }
+    .navb {
+        background-color: #FDFDFE;
+        color: black;
+        border-color: #FDFDFE;
+    }
 
-  .announcement {
-    background-color: #6A4C93;
-    color: white;
-    border-color: #6A4C93;
-  }
+    .active {
+        background-color: #6A4C93;
+        color: #FDFDFE;
+        border-color: #6A4C93;
+    }
 
-  .card {
-    background-color: #f9f9f9;
-    border-color: #f9f9f9;
-    box-shadow: 6px 6px #C8A2C8;
-    color: black;
-  }
+    .announcement {
+        background-color: #6A4C93;
+        color: white;
+        border-color: #6A4C93;
+    }
 
-  .card:hover {
-    background-color: rgb(177, 158, 231);
-    border-color: rgb(177, 158, 231);
-    box-shadow: 7px 7px #5C5C5C;
-    color: white;
-  }
+    .card {
+        background-color: #f9f9f9;
+        border-color: #f9f9f9;
+        box-shadow: 6px 6px #C8A2C8;
+        color: black;
+    }
 
-  .back {
-    background-color: white;
-    color: black;
-    border-color: white;
-  }
+    .card:hover {
+        background-color: rgb(177, 158, 231);
+        border-color: rgb(177, 158, 231);
+        box-shadow: 7px 7px #5C5C5C;
+        color: white;
+    }
 
-  .back:hover {
-    background-color: rgb(78, 97, 24);
-    border-color: rgb(78, 97, 24);
-    filter: invert(100%);
-  }
+    .back {
+        background-color: white;
+        color: black;
+        border-color: white;
+    }
+
+    .back:hover {
+        background-color: rgb(78, 97, 24);
+        border-color: rgb(78, 97, 24);
+        filter: invert(100%);
+    }
 }

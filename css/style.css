@@ -440,3 +440,81 @@ a, p {
         max-width: 450px;
     }
 }
+
+/* Force look in dark mode */
+@media (prefers-color-scheme: dark) {
+
+  body, .container, .pagina, .menu, .logo, .navb, .active, .inhoud,
+  #opening, #opening *, #profile_pic, #intro,
+  .contact_info, #envelope, .titel_contact, #c_title, #linkc, #link2,
+  .werk_inhoud, .announcement, .card, .cover, .card_title, .jaar,
+  .bb, .back, .arrow, .text_1, .pic, #p1, #p2, #p3, .text, .inhoud_w,
+  h1, h5, a, p {
+    background-color: initial;
+    color: initial;
+    border-color: initial;
+    box-shadow: initial;
+  }
+
+  body {
+    background-color: white;
+    color: black;
+  }
+
+  h1 {
+    color: #6A4C93;
+  }
+
+  h5 {
+    color: #2d2d2d;
+  }
+
+  .menu {
+    background-color: white;
+    box-shadow: 7px 7px 7px rgba(215, 193, 224, 0.621);
+  }
+
+  .navb {
+    background-color: #FDFDFE;
+    color: black;
+    border-color: #FDFDFE;
+  }
+
+  .active {
+    background-color: #6A4C93;
+    color: #FDFDFE;
+    border-color: #6A4C93;
+  }
+
+  .announcement {
+    background-color: #6A4C93;
+    color: white;
+    border-color: #6A4C93;
+  }
+
+  .card {
+    background-color: #f9f9f9;
+    border-color: #f9f9f9;
+    box-shadow: 6px 6px #C8A2C8;
+    color: black;
+  }
+
+  .card:hover {
+    background-color: rgb(177, 158, 231);
+    border-color: rgb(177, 158, 231);
+    box-shadow: 7px 7px #5C5C5C;
+    color: white;
+  }
+
+  .back {
+    background-color: white;
+    color: black;
+    border-color: white;
+  }
+
+  .back:hover {
+    background-color: rgb(78, 97, 24);
+    border-color: rgb(78, 97, 24);
+    filter: invert(100%);
+  }
+}

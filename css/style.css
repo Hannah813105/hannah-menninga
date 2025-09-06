@@ -19,7 +19,7 @@
     display: grid;
     grid-template-columns: 0.5fr minmax(200px, 6fr) 0.5fr;
     grid-template-rows: 200px auto;
-    row-gap: 50px;
+    row-gap: 30px;
 }
 
 .pagina > * {
@@ -347,15 +347,7 @@ a, p {
 }
 
 @media (max-width: 440px) {
-    .pagina {
-        row-gap: 30px;
-    }
-
-    .inhoud, #opening {
-        padding: 5px;
-    }
-
-    h1 {
+        h1 {
         font-size: 46px;
         padding: 10px;
     }
@@ -364,11 +356,23 @@ a, p {
         margin-top: 8px;
         font-size: 18px;
         padding: 10px;
-        max-width: 250px;
+        max-width: 225px;
     }
 
     a, p {
         font-size: 14px;
+    }
+
+    .pagina {
+        row-gap: 30px;
+    }
+
+    .inhoud, #opening {
+        padding: 5px;
+    }
+
+    #opening {
+        margin-top: 20px;
     }
 
     #profile_pic {

@@ -12,13 +12,13 @@
 }
 
 .pagina {
-    padding-top: 10%;
+    padding-top: 12vh;
     padding-bottom: 140px;
     min-height: 100vh;
 
     display: grid;
     grid-template-columns: 0.5fr minmax(200px, 6fr) 0.5fr;
-    grid-template-rows: 160px auto;
+    grid-template-rows: 200px auto;
     row-gap: 50px;
 }
 
@@ -337,7 +337,7 @@ a, p {
 /*content aanpassingen groote window*/
 @media (max-width: 420px) {
     .pagina {
-        padding-top: 30%;
+        row-gap: 30px;
     }
 
     .inhoud {
@@ -345,12 +345,12 @@ a, p {
     }
 
     h1 {
-        font-size: 28px;
+        font-size: 46px;
     }
 
     h5 {
         margin-top: 8px;
-        font-size: 14px;
+        font-size: 18px;
     }
 
     a, p {
@@ -414,10 +414,6 @@ a, p {
 }
 
 @media (max-width: 800px) {
-
-    .pagina {
-        padding-top: 20%;
-    }
 
     .inhoud {
         grid-template-columns: 1fr;

@@ -12,7 +12,7 @@
 }
 
 .pagina {
-    padding-top: 12vh;
+    padding-top: 15vh;
     padding-bottom: 140px;
     min-height: 100vh;
 
@@ -180,19 +180,24 @@ a, p {
 }
 
 #linkc{
+    display: inline-block;
     box-shadow: 4px 5px #C8A2C8;
     margin-left: 0;
-    min-width: 120px;
+    padding: 10px 15px 5px 15px;
     align-items: center;
+    border-radius: 30px;
+
+    border: 20px #FDFDFE;
+    color: black;
+    text-decoration: none;
+    white-space: nowrap;
+    width: fit-content; 
+    min-width: max-content;
 }
 
-#link2{
-    box-shadow: 4px 5px #C8A2C8;
-    min-width: 160px;
-    margin-left: 0;
-}
-
-#link2:hover, #linkc:hover{
+#linkc:hover{
+    color: white;
+    font-weight: 500;
     box-shadow: 4px 5px #5C5C5C;
 }
 

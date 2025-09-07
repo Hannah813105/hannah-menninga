@@ -9,7 +9,6 @@
   color-scheme: light;
 }
 
-
 .container {
     width: 100%;
     min-height: 100vh;
@@ -92,6 +91,7 @@ a, p {
 
 /* navigatie knoppen */
 .navb {
+    display: inline-block;
     margin-top: 15px;
     margin-bottom: 10px;
     height: 25px;

@@ -220,11 +220,12 @@ a, p {
 }
 
 .announcement {
-    padding: 20px;
     color: white;
     text-decoration: none;
     background-color: #6A4C93;
     border: 10px solid #6A4C93;
+    align-content: center;
+    padding-bottom: 25px;
 }
 
 .card {

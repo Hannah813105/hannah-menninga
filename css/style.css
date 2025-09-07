@@ -5,6 +5,11 @@
     margin: auto;
 }
 
+:root {
+  color-scheme: light;
+}
+
+
 .container {
     width: 100%;
     min-height: 100vh;
@@ -497,7 +502,6 @@ a, p {
 
 /* Force look in dark mode */
 @media (prefers-color-scheme: dark) {
-
     body, .container, .pagina, .menu, .logo, .navb, .active, .inhoud,
     #opening, #opening *, #profile_pic, #intro,
     .contact_info, #envelope, .titel_contact, #c_title, #linkc, #link2,
@@ -510,21 +514,21 @@ a, p {
         box-shadow: initial;
     }
 
+    h1 {
+        color: #6A4C93 !important; 
+    }
+    
+    h5 { 
+        color: #2d2d2d !important; 
+    }
+
     body {
         background-color: white;
         color: black;
     }
 
-    h1 {
-        color: #6A4C93;
-    }
-
-    h5 {
-        color: #2d2d2d;
-    }
-
     .container {
-        background-image: conic-gradient(from -3.66deg at 50% 0%, #B8F6FF 0deg, rgba(196, 232, 246, 0.748059) 90.7deg, rgba(200, 227, 243, 0.659374) 122.63deg, rgba(226, 209, 232, 0.342452) 236.72deg, rgba(232, 189, 220, 0) 360deg);
+        background-image: conic-gradient(from -3.66deg at 50% 0%, #B8F6FF 0deg, rgba(196, 232, 246, 0.748059) 90.7deg, rgba(200, 227, 243, 0.659374) 122.63deg, rgba(226, 209, 232, 0.342452) 236.72deg, rgba(232, 189, 220, 0) 360deg) !important;
     }
 
     .menu {

@@ -98,27 +98,25 @@ a, p {
     min-width: 80px;
     width: auto;
     text-align: center;
+    align-content: center;
 
     color: black;
     background-color:#FDFDFE;
     text-decoration: none;
 
     border-radius: 22px; 
-    border-width: 8px 10px 0px 10px;
-    border-style: solid;
+    padding: 8px 12px;
     border-color: #FDFDFE;
 }
 
 .active{
     color: #FDFDFE;
     background-color: #6A4C93;
-    border-color: #6A4C93;
 } 
 
 .navb:hover {
     color: white;
     background-color: rgb(177, 158, 231);
-    border-color: rgb(177, 158, 231);
 }
 
 #home {
@@ -222,21 +220,19 @@ a, p {
     box-sizing: border-box;
     border-radius: 22px; 
     text-align: center;
+    padding: 15px;
 }
 
 .announcement {
     color: white;
     text-decoration: none;
     background-color: #6A4C93;
-    border: 10px solid #6A4C93;
     align-content: center;
-    padding-bottom: 25px;
-    padding: 40px;
+    padding: 15px 40px 25px 40px;
 }
 
 .card {
     background-color: #f9f9f9;
-    border: 10px solid #f9f9f9; 
     box-shadow: 6px 6px #C8A2C8;
     color: black;
     text-decoration: none;
@@ -244,7 +240,6 @@ a, p {
 
 .card:hover{
     background-color: rgb(177, 158, 231);
-    border-color: rgb(177, 158, 231);
     box-shadow: 7px 7px #5C5C5C;
     color: white;
 }

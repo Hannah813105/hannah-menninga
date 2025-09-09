@@ -209,9 +209,13 @@ a, p {
 }
 
 #arro {
+    display: inline-block;
     padding: 0;
     filter: invert(100%);
+    -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
+    -webkit-transform-origin: center center;   
+    transform-origin: center center;
     padding-bottom: 5px;
     height: 20px;
 }

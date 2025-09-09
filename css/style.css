@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 
 * {
     margin: auto;
@@ -13,6 +15,18 @@
     width: 100%;
     min-height: 100vh;
     background-image: conic-gradient(from -3.66deg at 50% 0%, #B8F6FF 0deg, rgba(196, 232, 246, 0.748059) 90.7deg, rgba(200, 227, 243, 0.659374) 122.63deg, rgba(226, 209, 232, 0.342452) 236.72deg, rgba(232, 189, 220, 0) 360deg);
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO8+Q8AAiUBfTt75lMAAAAASUVORK5CYII=');
+    opacity: 0.02; /* Tune between 0.02–0.05 */
+    z-index: 1;
 }
 
 .pagina {
@@ -49,7 +63,8 @@ h5 {
 }
 
 a, p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     font-weight: normal;
     font-size: 16px;
 }
@@ -82,7 +97,7 @@ a, p {
     margin-top: 20px;
     margin-left: 30px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+    font-weight: 500;
     text-decoration: none;
     font-size: large;
     color: black;
@@ -97,6 +112,10 @@ a, p {
     height: 25px;
     min-width: 80px;
     width: auto;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-shadow: 0 0 0.5px currentColor;
     text-align: center;
     align-content: center;
 
@@ -171,7 +190,7 @@ a, p {
 .titel_contact {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 20px;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -187,8 +206,9 @@ a, p {
     display: inline-block;
     box-shadow: 4px 5px rgb(177, 158, 231);
     margin-right: 0;
-    padding: 10px 15px 5px 15px;
-    align-items: center;
+    margin-top: 7px;
+    padding: 7px 15px 7px 15px;
+    text-shadow: 0 0 0;
     border-radius: 30px;
 
     border: 20px #FDFDFE;
@@ -201,7 +221,6 @@ a, p {
 
 #linkc:hover{
     color: white;
-    font-weight: 500;
     box-shadow: 4px 5px #6A4C93;
 }
 
@@ -236,6 +255,9 @@ a, p {
 .card {
     background-color: #f9f9f9;
     box-shadow: 6px 6px rgb(177, 158, 231);
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     color: black;
     text-decoration: none;
 }

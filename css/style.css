@@ -158,24 +158,76 @@ a, p {
     grid-column-start: 2;
 }
 
+/* 'over mij' opening naar werk */
+#opening {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f9f9f9;
+
+    border-radius: 22px;    
+    box-shadow: 6px 6px rgb(177, 158, 231);
+}
+
+#opening *{
+    font-family: 'Aileron', sans-serif;
+    color: #6A4C93;
+    padding: 10px;
+}
+
+#linko {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    background-color: #6A4C93;
+    box-shadow: 4px 5px rgb(177, 158, 231);
+
+    margin-top: 7px;
+    padding: 10px 15px;
+    border-radius: 30px;
+
+    font-family: 'Aileron bold', sans-serif;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+
+    width: fit-content;
+    white-space: nowrap;
+}
+
+#linko, 
+#linko p, 
+#linko span {
+    font-family: 'Aileron bold', sans-serif;
+    color: white;
+}
+
+#linko p {
+    margin: 0;
+    padding-right: 0;
+}
+
+#arro {
+    padding: 0;
+    filter: invert(100%);
+    rotate: 180deg;
+    padding-bottom: 5px;
+    height: 20px;
+}
+
+#linko:hover{
+    background-color: rgb(177, 158, 231);
+    box-shadow: 4px 5px #6A4C93;
+}
+
 /* 'over mij' pagina inhoud */
 .inhoud {
     padding-left: 50px;
     padding-right: 50px;
     display: grid;
-    grid-template-columns: 2fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
     column-gap: 50px;
-}
-
-#opening, #opening *{
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-radius: 22px;
-
-    font-family: 'Aileron', sans-serif;
-    text-align: center;
-    max-width: 350px;
-    color: #6A4C93;
 }
 
 #profile_pic {
@@ -185,7 +237,7 @@ a, p {
 
 #intro {
     min-width: 240px;
-    max-width: 300px;
+    max-width: 320px;
     margin: 20px;
 }
 
@@ -389,37 +441,23 @@ a, p {
     }
 }
 
-@media (max-width: 440px) {
-    h1 {
-        font-size: 46px;
-        padding: 10px;
-    }
-
-    h5 {
-        margin-top: 8px;
-        font-size: 18px;
-        padding: 10px;
-        max-width: 225px;
-    }
-
+@media (max-width: 450px) {
     a, p {
         font-size: 14px;
     }
 
     .navb {
-        min-width: 60px;
+        min-width: 65px;
+        padding: 10px 10px;
+        text-align: center;
     }
 
     .pagina {
         row-gap: 30px;
     }
 
-    .inhoud, #opening {
+    .inhoud {
         padding: 5px;
-    }
-
-    #opening {
-        margin: 10px;
     }
 
     #profile_pic {
@@ -439,6 +477,18 @@ a, p {
 }
 
 @media (max-width: 500px) {
+    h1 {
+        font-size: 46px;
+        padding: 10px;
+    }
+
+    h5 {
+        margin-top: 8px;
+        font-size: 18px;
+        padding: 10px;
+        max-width: 240px;
+    }
+    
     .menu {
         position: absolute;
         left: 3%;
@@ -455,6 +505,8 @@ a, p {
 
     .werk_inhoud {
         grid-template-columns: 1fr;
+        padding: 15px;
+        row-gap: 15px;
     }
 }
 
@@ -482,7 +534,7 @@ a, p {
 
 @media (max-width: 666px) {
     .pagina {
-        grid-template-rows: 250px auto;
+        grid-template-rows: 160px auto;
         padding-top: 24vh;
     }
 
@@ -518,6 +570,10 @@ a, p {
 }
 
 @media (max-width: 800px) {
+    #opening {
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
 
     .inhoud {
         grid-template-columns: 1fr;
@@ -526,7 +582,6 @@ a, p {
     #intro {
         padding-top: 50px;
     }
-
 }
 
 @media (min-width: 1200px) {

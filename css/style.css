@@ -209,7 +209,7 @@ a, p {
     background-size: contain;
     background-repeat: no-repeat;
 
-    transform: rotate(180deg);
+    transform: rotate(90deg);
     transform-origin: center;
     
     filter: invert(100%);

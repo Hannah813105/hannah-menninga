@@ -196,6 +196,7 @@ a, p {
     white-space: nowrap;
 }
 
+
 #linko::after {
     content: "";
     display: inline-block;
@@ -208,17 +209,13 @@ a, p {
     background-image: url('../images/arrow.svg');
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
 
     transform: rotate(180deg);
     transform-origin: center;
     
     filter: invert(100%);
 }
-
-@supports (-webkit-touch-callout: none) {
-  #linko::after {
-      transform: rotate(90deg) !important;}
-  }
 
 #linko, 
 #linko p, 

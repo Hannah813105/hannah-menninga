@@ -199,12 +199,12 @@ a, p {
 #linko::after {
     content: "";
     display: inline-block;
-    width: 16px; /* adjust to your arrow size */
+    width: 16px;
     height: 16px;
-    background-image: url('/images/arrow.svg');
+    background-image: url('../images/arrow.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    margin-left: 4px; /* space between text and arrow */
+    margin-left: 4px;
     vertical-align: middle;
 
     transform: rotate(180deg);

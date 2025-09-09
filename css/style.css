@@ -3,21 +3,21 @@
 
 @font-face {
     font-family: 'Aileron';
-    src: url('/fonts/aileron/aileron.regular.otf') format('opentype');
+    src: url('../fonts/aileron/aileron.regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Aileron semibold';
-    src: url('/fonts/aileron/aileron.semibold.otf') format('opentype');
+    src: url('../fonts/aileron/aileron.semibold.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Aileron bold';
-    src: url('/fonts/aileron/aileron.bold.otf') format('opentype');
+    src: url('../fonts/aileron/aileron.bold.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }

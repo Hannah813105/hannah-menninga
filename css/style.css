@@ -196,7 +196,6 @@ a, p {
     white-space: nowrap;
 }
 
-
 #linko::after {
     content: "";
     display: inline-block;
@@ -673,6 +672,21 @@ a, p {
         border-color: #6A4C93;
     }
 
+    #opening {
+        background-color: #f9f9f9 !important;
+        box-shadow: 6px 6px rgb(177, 158, 231) !important;
+    }
+
+    #opening * {
+    color: #6A4C93;
+    }
+
+    #linko {
+        background-color: #6A4C93;
+        box-shadow: 4px 5px rgb(177, 158, 231);
+        color: white;   
+    }
+
     .announcement {
         background-color: #6A4C93;
         color: white;
@@ -682,15 +696,15 @@ a, p {
     .card {
         background-color: #f9f9f9;
         border-color: #f9f9f9;
-        box-shadow: 6px 6px #C8A2C8;
+        box-shadow: 6px 6px rgb(177, 158, 231);
         color: black;
     }
 
     .card:hover {
         background-color: rgb(177, 158, 231);
         border-color: rgb(177, 158, 231);
-        box-shadow: 7px 7px #5C5C5C;
-        color: white;
+        box-shadow: 7px 7px #6A4C93;
+        color: white !important;
     }
 
     .back {
@@ -705,13 +719,14 @@ a, p {
         filter: invert(100%);
     }
 
-    #linkc, #link2 {
-        box-shadow: 4px 5px #C8A2C8;
+    #linkc{
+        box-shadow: 4px 5px rgb(177, 158, 231);
         background-color: white;
         color: black;
     }
 
-    #linkc:hover, #link2:hover {
-        box-shadow: 4px 5px #5C5C5C;
+    #linkc:hover {
+        background-color: rgb(177, 158, 231);
+        box-shadow: 4px 5px #6A4C93;
     }
 }

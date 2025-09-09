@@ -196,6 +196,23 @@ a, p {
     white-space: nowrap;
 }
 
+#linko::after {
+    content: "";
+    display: inline-block;
+    width: 16px; /* adjust to your arrow size */
+    height: 16px;
+    background-image: url('/images/arrow.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 4px; /* space between text and arrow */
+    vertical-align: middle;
+
+    transform: rotate(180deg);
+    height: 20px;
+
+    filter: invert(100%);
+}
+
 #linko, 
 #linko p, 
 #linko span {
@@ -208,7 +225,7 @@ a, p {
     padding-right: 0;
 }
 
-#arro {
+/* #arro {
     display: inline-block;
     padding: 0;
     filter: invert(100%);
@@ -218,7 +235,7 @@ a, p {
     transform-origin: center center;
     padding-bottom: 5px;
     height: 20px;
-}
+} */
 
 #linko:hover{
     background-color: rgb(177, 158, 231);

@@ -201,15 +201,17 @@ a, p {
     display: inline-block;
     width: 16px;
     height: 16px;
-    background-image: url('../images/arrow.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
     margin-left: 4px;
+    margin-top: 4px;
     vertical-align: middle;
 
-    transform: rotate(180deg);
-    height: 20px;
+    background-image: url('../images/arrow.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
 
+    transform: rotate(180deg);
+    transform-origin: center;
+    
     filter: invert(100%);
 }
 

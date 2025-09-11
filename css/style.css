@@ -208,13 +208,13 @@ a, p {
     padding-right: 0;
 }
 
- #arro {
+#arro {
     display: inline-block;
     vertical-align: middle;
     padding: 0;
     padding-bottom: 1px;
     height: 20px;
-    padding-right: 5px;
+    padding-right: 20px;
 
     filter: invert(100%);
     -webkit-transform: rotate(180deg);
@@ -338,12 +338,6 @@ a, p {
     text-decoration: none;
 }
 
-.card:hover{
-    background-color: rgb(177, 158, 231);
-    box-shadow: 7px 7px #6A4C93;
-    color: white;
-}
-
 .cover {
     width: 100%;
     height: auto;
@@ -353,11 +347,20 @@ a, p {
 
 .card_title {
     margin-top: 8px;
+    font-family: 'Aileron bold', sans-serif;
+    font-weight: normal;
+
 }
 
 .jaar {
     color: #5C5C5C;
     opacity: 100%;
+}
+
+.card:hover{
+    background-color: rgb(177, 158, 231);
+    box-shadow: 7px 7px #6A4C93;
+    color: white;
 }
 
 

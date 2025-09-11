@@ -214,7 +214,7 @@ a, p {
     padding: 0;
     padding-bottom: 1px;
     height: 20px;
-    padding-right: 20px;
+    padding-right: 5px;
 
     filter: invert(100%);
     -webkit-transform: rotate(180deg);

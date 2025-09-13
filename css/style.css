@@ -38,15 +38,10 @@
     conic-gradient(
     from -3.66deg at 50% 0%,
     #B8F6FF 0deg,
-    rgba(196, 232, 246, 0.75) 90.7deg,
+    rgba(196, 232, 246, 0.55) 90.7deg,
     rgba(200, 227, 243, 0.65) 122.63deg,
     rgba(226, 209, 232, 0.40) 236.72deg,
-    transparent 360deg),
-    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJ0lEQVQYV2NkYGBg+M8ABWBgYGBg+A8IAyqYBhiGEANRmQKwGkQAAMv2C0PJq+xGAAAAAElFTkSuQmCC")
-    ;
-
-  background-size: auto, 150px 150px;
-  background-repeat: no-repeat, repeat;
+    rgba(232, 189, 220, 0) 360deg);
 }
 
 .container::after {

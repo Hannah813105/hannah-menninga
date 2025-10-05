@@ -41,7 +41,12 @@
     rgba(196, 232, 246, 0.55) 90.7deg,
     rgba(200, 227, 243, 0.65) 122.63deg,
     rgba(226, 209, 232, 0.40) 236.72deg,
-    rgba(232, 189, 220, 0) 360deg);
+    rgba(232, 189, 220, 0) 360deg),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJ0lEQVQYV2NkYGBg+M8ABWBgYGBg+A8IAyqYBhiGEANRmQKwGkQAAMv2C0PJq+xGAAAAAElFTkSuQmCC")
+    ;
+
+  background-size: auto, 2px 2px;
+  background-repeat: no-repeat, repeat;
 }
 
 .container::after {
@@ -63,7 +68,7 @@
 
     display: grid;
     grid-template-columns: 0.5fr minmax(200px, 6fr) 0.5fr;
-    grid-template-rows: 170px auto;
+    grid-template-rows: 200px auto;
     row-gap: 30px;
 }
 
@@ -82,7 +87,7 @@ h1 {
 
 h5 {
     font-family: 'Courier Prime', monospace;
-    margin-top: 8px;
+    margin-top: 20px !important;
     font-size: 18px;
     text-align: center;
     color: #2d2d2d;
@@ -93,6 +98,10 @@ a, p {
     font-family: 'Aileron', sans-serif;
     font-weight: normal;
     font-size: 16px;
+}
+
+.top_tekst {
+    text-align: center; 
 }
 
 
@@ -373,36 +382,32 @@ a, p {
 
 
 /*back button naar werk html*/
-.bb {
-    margin-top: 0;  
-    grid-row-start: 1;
-}
 
-.back {
-    margin-top: 0px;
-    margin-bottom: 10px;
-    padding-top: 2px;
-    padding-bottom: 5px;
-    height: 20px;
-    min-width: 65px;
+#back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 25px;
+    min-width: 75px;
     text-align: center;
 
     color: black;
     background-color: white;
     text-decoration: none;
 
-    border-radius: 22px; 
-    border-width: 5px 10px 0px 10px;
+    border-radius: 40px; 
+    border-width: 5px 5px 5px 5px;
     border-style: solid;
     border-color: white;
 }
 
 .arrow {
-    width: 15px;
-    left: -2px;
+    width: 20px;
+    left: 2px;
 }
 
-.back:hover {
+#back:hover {
     background-color: rgb(78, 97, 24);
     border-color: rgb(78, 97, 24);
     filter: invert(100%);
@@ -410,47 +415,37 @@ a, p {
 
 
 /*binnen de pagia's over projecten*/
+.inhoud_w {
+    grid-column: 2;
+    width: 100%;
+    justify-self: stretch;
+    margin-top: 20px;
+
+    display: grid;
+    grid-template-columns: .8fr 2fr 2fr;
+    grid-auto-rows: minmax(50px, auto);
+
+    grid-gap: 20px;
+}
+
 .text_1 {
     margin-top: 0;
     grid-row-start: 2;
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-column-end: 4;
 }
 
-.pic {
-    grid-row-start: 3;
+.pic_big {
     max-width: 500px;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
-#p1 {
-    grid-column-start: 2;
-    grid-row-start: 3;
-}
-
-#p2 {
-    grid-column-start: 2;
-    grid-row-start: 4;
-}
-
-#p3 {
-    grid-column-start: 2;
-    grid-row-start: 5;
-}
-
-.text {
+.text_2 {
     grid-row-start: 3;
     grid-column-start: 3;
 }
 
-.inhoud_w {
-    margin-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    display: grid;
-    grid-template-columns: .8fr 2fr 1fr 1fr;
-    grid-template-rows: .1fr .3fr 1fr 1fr;
-    grid-gap: 20px;
-}
 
 /*content aanpassingen groote window*/
 @media (max-height: 650px) {
@@ -462,6 +457,10 @@ a, p {
 @media (max-width: 450px) {
     a, p {
         font-size: 14px;
+    }
+
+    h5 {
+        margin-top: -8px !important;
     }
 
     .navb {
@@ -494,7 +493,7 @@ a, p {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 520px) {
     h1 {
         font-size: 46px;
         padding: 10px;

@@ -62,12 +62,11 @@
 .pagina {
     padding-top: 15vh;
     padding-bottom: 140px;
-    min-height: 100vh;
 
     display: grid;
     grid-template-columns: 0.5fr minmax(200px, 6fr) 0.5fr;
     grid-template-rows: 200px auto;
-    row-gap: 30px;
+    row-gap: 80px;
 }
 
 .pagina > * {
@@ -86,7 +85,7 @@ h1 {
 h5 {
     font-family: 'Courier Prime', monospace;
     margin-top: 20px !important;
-    font-size: 18px;
+    font-size: 22px;
     text-align: center;
     color: #2d2d2d;
     font-weight: 400;
@@ -157,6 +156,8 @@ a, p {
     border-radius: 22px; 
     padding: 8px 12px;
     border-color: #FDFDFE;
+
+    transition: all 0.5s ease 0.05s;
 }
 
 .active{
@@ -351,6 +352,8 @@ a, p {
     font-family: 'Aileron bold', sans-serif;
     color: black;
     text-decoration: none;
+
+    transition: all 0.5s ease 0.05s;
 }
 
 .cover {
@@ -548,6 +551,11 @@ a, p {
 }
 
 @media (max-width: 666px) {
+    h1 {
+        font-size: 46px;
+        padding: 10px;
+    }
+    
     .pagina {
         grid-template-rows: 160px auto;
         padding-top: 24vh;
@@ -613,6 +621,12 @@ a, p {
     .titel_contact {
         max-width: 450px;
     }
+}
+
+@media (min-width: 1440px) {
+   .menu {
+    grid-template-columns: 16fr 1fr 1fr 1fr;
+} 
 }
 
 /* Force look in dark mode */

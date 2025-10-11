@@ -47,7 +47,7 @@
   background-repeat: no-repeat, repeat;
 }
 
-.container::after {
+/* .container::after {
     content: "";
     position: absolute;
     top: 0; left: 0;
@@ -55,9 +55,9 @@
     height: 100%;
     pointer-events: none;
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO8+Q8AAiUBfTt75lMAAAAASUVORK5CYII=');
-    opacity: 0.05; /* Tune between 0.02–0.05 */
+    opacity: 0.05;
     z-index: 1;
-}
+} */
 
 .pagina {
     padding-top: 15vh;
@@ -71,6 +71,11 @@
 
 .pagina > * {
     grid-column: 2;
+}
+
+img {
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 
@@ -259,6 +264,7 @@ a, p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 50px;
+    padding: 20px;
 }
 
 #profile_pic {

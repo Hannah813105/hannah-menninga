@@ -382,18 +382,11 @@ a, p {
 .card_title {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
     
     height: 40px;
     margin-top: 12px;
     font-family: 'Aileron bold', sans-serif;
     font-weight: normal;
-}
-
-.card_title b {
-    margin: 2px 0; 
 }
 
 .jaar {

@@ -367,6 +367,7 @@ a, p {
     font-family: 'Aileron bold', sans-serif;
     color: black;
     text-decoration: none;
+    position: relative;
 
     transition: all 0.3s ease 0.05s;
 }
@@ -379,10 +380,20 @@ a, p {
 }
 
 .card_title {
-    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+    height: 40px;
+    margin-top: 12px;
     font-family: 'Aileron bold', sans-serif;
     font-weight: normal;
+}
 
+.card_title b {
+    margin: 2px 0; 
 }
 
 .jaar {

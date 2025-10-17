@@ -476,6 +476,39 @@ a, p {
     grid-column-end: 4;
 }
 
+.banner {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover; 
+}
+
+.collage {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding: 10px;
+    gap: 20px
+}
+
+.workpic {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.widepic {
+  grid-column: span 2;
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+
 /*Tekeningen pagina*/
 .grid_image {
     grid-row: 3;
@@ -551,6 +584,14 @@ a, p {
         margin: 5px;
         min-height: 200px;
         max-width: 300px; 
+    }
+
+    .collage {
+        grid-template-columns: 1fr;
+    }
+
+    .widepic {
+    grid-column: span 1;
     }
 }
 

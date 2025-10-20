@@ -60,13 +60,13 @@
 } */
 
 .pagina {
-    padding-top: 15vh;
+    padding-top: 18vh;
     padding-bottom: 140px;
 
     display: grid;
     grid-template-columns: 0.5fr minmax(200px, 6fr) 0.5fr;
     grid-template-rows: 200px auto;
-    row-gap: 80px;
+    row-gap: 30px;
 }
 
 .pagina > * {
@@ -340,17 +340,6 @@ a, p {
   justify-content: center;
 }
 
-.announcement, .card {
-    min-height: 240px;
-    max-width: 420px; 
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-    border-radius: 22px; 
-    text-align: center;
-    padding: 15px;
-}
-
 .announcement {
     color: white;
     text-decoration: none;
@@ -360,7 +349,25 @@ a, p {
 
 }
 
-.card {
+.announcement, .box_card {
+    min-height: 260px;
+    max-width: 420px; 
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 22px; 
+    text-align: center;
+    padding: 15px;
+}
+
+/* .card:hover{
+    background-color: rgb(177, 158, 231);
+    box-shadow: 7px 7px #6A4C93;
+    color: white;
+} */
+
+
+.box_card {
     background-color: #f9f9f9;
     box-shadow: 6px 6px rgb(177, 158, 231);
 
@@ -368,6 +375,25 @@ a, p {
     color: black;
     text-decoration: none;
     position: relative;
+    border-radius: 24px;
+
+    transition: all 0.3s ease 0.05s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_card:hover{
+    background-color: rgb(177, 158, 231);
+    box-shadow: 7px 7px #6A4C93;
+    color: white;
+}
+
+.card {
+    font-family: 'Aileron bold', sans-serif;
+    color: black;
+    text-decoration: none;
 
     transition: all 0.3s ease 0.05s;
 }
@@ -384,22 +410,16 @@ a, p {
     flex-direction: column;
     
     height: 40px;
-    margin-top: 12px;
     font-family: 'Aileron bold', sans-serif;
     font-weight: normal;
+    text-decoration: none;
+    margin-top: 20px;
 }
 
 .jaar {
     color: #5C5C5C;
     opacity: 100%;
 }
-
-.card:hover{
-    background-color: rgb(177, 158, 231);
-    box-shadow: 7px 7px #6A4C93;
-    color: white;
-}
-
 
 /*back button naar werk html*/
 
@@ -450,8 +470,8 @@ a, p {
 
 .text_1 {
     grid-column: 1 / -1;
-    max-width: 800px;
-    text-align: center;
+    max-width: 700px;
+    text-align: left;
     justify-self: center;
 
     font-family: 'Aileron', sans-serif;
@@ -602,7 +622,7 @@ a, p {
         margin: 5% !important;
     }
 
-    .announcement, .card {
+    .announcement, .box_card {
         margin: 5px;
         min-height: 200px;
         max-width: 300px; 
@@ -619,7 +639,7 @@ a, p {
 
 @media (max-width: 520px) {
     h1 {
-        font-size: 46px;
+        font-size: 36px;
         padding: 10px;
     }
 
@@ -627,7 +647,7 @@ a, p {
         margin-top: 8px;
         font-size: 18px;
         padding: 10px;
-        max-width: 240px;
+        max-width: 320px;
     }
     
     .menu {
@@ -681,7 +701,7 @@ a, p {
 
 @media (max-width: 666px) {
     h1 {
-        font-size: 46px;
+        font-size: 36px;
         padding: 10px;
     }
     
@@ -771,7 +791,7 @@ a, p {
     }
     
     p, a {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .menu {
@@ -789,14 +809,17 @@ a, p {
     .navb {
         width: auto;
         min-width: 150px;
-        min-height: 50px;
+        min-height: 40px;
         border-radius: 50px;
         align-items: center;
     }
 
+    .box_card {
+        min-height: 340px;
+    }
+
     .card {
-        min-height: 480px;
-        max-width: 640px; 
+        margin-top: 0;
     }
 
     #arro {

@@ -910,14 +910,14 @@ a, p {
         border-color: #6A4C93;
     }
 
-    .card {
+    .box_card {
         background-color: #f9f9f9;
         border-color: #f9f9f9;
         box-shadow: 6px 6px rgb(177, 158, 231);
         color: black;
     }
 
-    .card:hover {
+    .box_card:hover {
         background-color: rgb(177, 158, 231);
         border-color: rgb(177, 158, 231);
         box-shadow: 7px 7px #6A4C93;

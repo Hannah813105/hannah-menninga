@@ -472,7 +472,7 @@ a, p {
     grid-column: 1 / -1;
     max-width: 700px;
     text-align: left;
-    justify-self: center;
+    margin-left: 50px;
 
     font-family: 'Aileron', sans-serif;
     font-weight: normal;
@@ -484,7 +484,7 @@ a, p {
     text-align: left !important;
     left: 0;
     margin: 20px;
-    max-width: 650px; 
+    max-width: 850px; 
     
     font-family: 'Aileron', sans-serif;
     font-weight: normal;
@@ -527,7 +527,7 @@ a, p {
     height: auto;
     max-width: 500px;
     max-height: 400px;
-    border-radius: 8px;
+    border-radius: 4px;
     object-fit: contain;
     background-color: rgba(177, 158, 231, 0.448);
     overflow: hidden;
@@ -539,7 +539,7 @@ a, p {
     width: 100%;
     height: auto;
     max-width: none;
-    border-radius: 16px;
+    border-radius: 8px;
     background-color: rgba(177, 158, 231, 0.448);
 }
 

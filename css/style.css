@@ -470,12 +470,15 @@ a, p {
 
 .text_1 {
     grid-column: 1 / -1;
-    max-width: 700px;
+    max-width: 750px;
     text-align: left;
     margin-left: 50px;
+}
 
-    font-family: 'Aileron', sans-serif;
-    font-weight: normal;
+.text_1 p{
+    font-family: 'Aileron semibold', sans-serif;
+    font-size: 18px;
+    color:#4a2b76;
 }
 
 .text_2 {
@@ -485,6 +488,7 @@ a, p {
     left: 0;
     margin: 20px;
     max-width: 850px; 
+    margin-left: 50px;
     
     font-family: 'Aileron', sans-serif;
     font-weight: normal;
@@ -499,6 +503,7 @@ a, p {
 .banner {
     grid-column-start: 1;
     grid-column-end: 4;
+    border-radius: 8px;
     height: auto;
     max-width: 100%;
     object-fit: cover; 

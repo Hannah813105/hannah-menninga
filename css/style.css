@@ -517,6 +517,8 @@ a, p {
     grid-column-end: 4;
 }
 
+/*werk afbeeldingen*/
+
 .banner {
     grid-column-start: 1;
     grid-column-end: 4;
@@ -561,7 +563,6 @@ a, p {
     max-height: 400px;
     border-radius: 4px;
     object-fit: contain;
-    background-color: rgba(177, 158, 231, 0.448);
     overflow: hidden;
     display: block; 
 }
@@ -687,13 +688,7 @@ a, p {
     }
 }
 
-@media (min-width: 1200px) {
-    .werk_inhoud {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (min-width: 800px) {
+@media (max-width: 1099px) {
     .werk_inhoud {
         grid-template-columns: 1fr 1fr; 
     }
@@ -720,6 +715,20 @@ a, p {
 
     .whale {
         grid-column: auto;
+    }
+}
+
+@media (min-width: 1100px) {
+    .werk_inhoud {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .werk_inhoud {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        row-gap: 15px;
     }
 }
 
@@ -811,12 +820,6 @@ a, p {
     .pagina > * {
         grid-column: 1;
     }  
-
-    .werk_inhoud {
-        grid-template-columns: 1fr;
-        padding: 15px;
-        row-gap: 15px;
-    }
 
     .inhoud_w {
         width: 85%;

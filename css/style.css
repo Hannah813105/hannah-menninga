@@ -183,22 +183,25 @@ a, p {
 /* 'over mij' opening naar werk */
 #opening {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.5fr 2fr;
     background-color: #f9f9f9;
-    width: 90%;
+    width: 80%;
 
     border-radius: 22px;    
     box-shadow: 6px 6px rgb(177, 158, 231);
 }
 
 #opening *{
-    font-family: 'Aileron', sans-serif;
-    color: #6A4C93;
     padding: 20px;
 }
 
+#opening p {
+    font-family: 'Aileron', sans-serif;
+    color: #6A4C93;
+}
+
 .openingpic {
-    height: 380px;
+    height: 320px;
     padding: 5px !important;
 }
 

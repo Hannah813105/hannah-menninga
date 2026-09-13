@@ -73,9 +73,27 @@
     row-gap: 30px;
 }
 
+.pagina_home {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    max-width: 1200px;
+    padding-top: 10vh;
+    padding-bottom: 140px;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 0.2fr minmax(200px, 6fr) 0.2fr;
+    row-gap: 30px;
+}
+
+.pagina_home > * {
+    grid-column: 2;
+}
+
 .pagina > * {
     grid-column: 2;
 }
+
 
 img {
   transform: translateZ(0);
@@ -108,7 +126,6 @@ a, p {
 .top_tekst {
     text-align: center; 
 }
-
 
 /* menubalk voor navigatie */
 .menu {
@@ -203,6 +220,41 @@ a, p {
 
     transition: all 0.3s ease 0.05s;
 }
+
+/* 'over mij' pagina inhoud */
+.intro_banner {
+    min-height: 300px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 50px;
+    padding: 20px;
+}
+
+#intro_pic {
+    max-height: 250px;
+    border-radius: 800px;
+}
+
+.inhoud {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 50px;
+    padding: 200px;
+}
+
+#profile_pic {
+    max-height: 450px;
+    border-radius: 800px;
+}
+
+#intro {
+    width: 90%;
+    max-width: 420px;
+    margin: 20px auto;
+    align-content: center;
+}
+
 
 /* 'over mij' opening naar werk */
 #opening {
@@ -301,26 +353,6 @@ a, p {
 #linko:hover{
     background-color: rgb(177, 158, 231);
     box-shadow: 4px 5px #6A4C93;
-}
-
-/* 'over mij' pagina inhoud */
-.inhoud {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 50px;
-    padding: 20px;
-}
-
-#profile_pic {
-    max-height: 450px;
-    border-radius: 800px;
-}
-
-#intro {
-    width: 90%;
-    max-width: 420px;
-    margin: 20px auto;
-    align-content: center;
 }
 
 /*contact pagina*/

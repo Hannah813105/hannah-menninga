@@ -439,6 +439,7 @@ a, p {
     font-weight: normal;
     text-decoration: none;
     margin-top: 20px;
+    margin-bottom: 24px;
 }
 
 .jaar {
@@ -711,7 +712,7 @@ a, p {
     }
 
     .pagina {
-        padding-top: 10vh;
+        padding-top: 20vh;
     }
 }
 
@@ -725,14 +726,15 @@ a, p {
     #opening {
         width: 100%;
     }
+
+    .inhoud {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
 }
 
 @media (max-width: 800px) {
     #opening {
-        grid-template-columns: 1fr;
-    }
-
-    .inhoud {
         grid-template-columns: 1fr;
     }
 
@@ -758,7 +760,7 @@ a, p {
     }
 
     .openingpic {
-        height: 160px;
+        height: 300px;
     }
 }
 

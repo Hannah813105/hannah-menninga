@@ -110,6 +110,10 @@ a, p {
     font-size: 16px;
 }
 
+a {
+    color: #6A4C93;
+}
+
 .top_tekst {
     text-align: center; 
 }
